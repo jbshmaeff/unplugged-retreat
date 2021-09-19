@@ -87,6 +87,208 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/********Base Header - Footer Styles ********/
+
+header,
+footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+body {
+
+}
+
+
+/*******Header styles*******/
+
+
+
+header .container-wrapper {
+  display: flex;
+  width: 1200px;
+}
+
+header .header-divider {
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  list-style: none;
+}
+
+header nav ul li {
+
+
+}
+
+/*******Mobile styles - Homepage*********/
+
+/*****Main area*******/
+
+#main {
+
+}
+
+main .hero-area {
+  display: flex;
+}
+
+main .container-wrapper {
+
+}
+
+h1 {
+
+}
+
+aside {
+  display: flex;
+}
+
+aside .container-wrapper {
+
+}
+
+aside .form-description {
+
+}
+
+aside .form {
+
+}
+
+h3 {
+
+}
+
+#features {
+  display: flex;
+}
+
+features .container-wrapper {
+  display: flex;
+}
+
+article {
+
+}
+
+#reviews {
+  display: flex;
+}
+
+reviews .container-wrapper {
+
+}
+
+h3 {
+
+}
+
+article {
+
+}
+
+article .lacrue-bottling {
+
+}
+
+/************Mobile Styles - About page****************/
+
+.mission {
+  display: flex;
+}
+
+mission .container-wrapper {
+
+}
+
+.mission-content {
+
+}
+
+h2 {
+
+}
+
+#map {
+
+}
+
+#contact-section {
+  display: flex;
+
+}
+
+contact-session .container-wrapper {
+
+}
+
+
+
+
+/*******************Mobile Styles - FAQ page*******************/
+
+#faq {
+  display: flex;
+}
+
+faq .content-wrapper {
+
+}
+
+
+
+
+/************Footer Styles**********/
+
+footer .container-wrapper {
+
+}
+
+footer .footer-content {
+
+}
+
+footer .contact {
+
+}
+
+h4 {
+
+}
+
+footer .social {
+
+}
+
+footer .social-icons {
+  display: flex;
+}
+
+footer .social-icons p {
+  display: flex;
+}
+
+footer .copyright {
+
+}
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
