@@ -94,11 +94,11 @@ footer {
   display:flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
-}
+  flex-flow: row wrap;
+ }
 
 body {
-
+  flex-flow: row wrap;
 }
 
 
@@ -106,9 +106,11 @@ body {
 
 
 
-header .container-wrapper {
+header .content-wrapper {
   display: flex;
-  width: 1200px;
+  flex-direction: column;
+  background-color: #202322;
+  
 }
 
 header .header-divider {
@@ -123,7 +125,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 300px;
+  width: 320px;
   list-style: none;
 }
 
@@ -140,11 +142,12 @@ header nav ul li {
 
 }
 
-main .hero-area {
+main #hero-area {
   display: flex;
+  flex-flow: row wrap;
 }
 
-main .container-wrapper {
+main .content-wrapper {
 
 }
 
@@ -156,7 +159,7 @@ aside {
   display: flex;
 }
 
-aside .container-wrapper {
+aside .content-wrapper {
 
 }
 
@@ -165,19 +168,21 @@ aside .form-description {
 }
 
 aside .form {
-
+ 
 }
 
-h3 {
-
+aside h3 {
+  flex-flow: row wrap;
 }
 
-#features {
+main #features {
   display: flex;
 }
 
-features .container-wrapper {
+features .content-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
@@ -188,7 +193,7 @@ article {
   display: flex;
 }
 
-reviews .container-wrapper {
+reviews .content-wrapper {
 
 }
 
@@ -204,57 +209,13 @@ article .lacrue-bottling {
 
 }
 
-/************Mobile Styles - About page****************/
-
-.mission {
-  display: flex;
-}
-
-mission .container-wrapper {
-
-}
-
-.mission-content {
-
-}
-
-h2 {
-
-}
-
-#map {
-
-}
-
-#contact-section {
-  display: flex;
-
-}
-
-contact-session .container-wrapper {
-
-}
-
-
-
-
-/*******************Mobile Styles - FAQ page*******************/
-
-#faq {
-  display: flex;
-}
-
-faq .content-wrapper {
-
-}
-
-
-
-
 /************Footer Styles**********/
 
-footer .container-wrapper {
-
+footer .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .footer-content {
@@ -281,9 +242,65 @@ footer .social-icons p {
   display: flex;
 }
 
-footer .copyright {
+footer .copyright ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
+
+footer .copyright ul li {
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+
+/************Mobile Styles - About page****************/
+
+.mission {
+  display: flex;
+}
+
+mission .content-wrapper {
+
+}
+
+.mission-content {
+
+}
+
+h2 {
+
+}
+
+#map {
+
+}
+
+#contact-section {
+  display: flex;
+
+}
+
+contact-session .content-wrapper {
+
+}
+
+
+/*******************Mobile Styles - FAQ page*******************/
+
+#faq {
+  display: flex;
+}
+
+faq .content-wrapper {
+  display: flex;
+}
+
 
 
 
