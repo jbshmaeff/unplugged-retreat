@@ -87,6 +87,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper {
+      width: 90%;
+      margin: 50px 0;
+      padding: 0 20px;
+   
+   }
+
+
 /********Base Header - Footer Styles ********/
 
 header,
@@ -97,14 +105,9 @@ footer {
   flex-flow: row wrap;
  }
 
-body {
-  flex-flow: row wrap;
+ header {
+ 
 }
-
-
-/*******Header styles*******/
-
-
 
 header .content-wrapper {
   display: flex;
@@ -112,11 +115,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   background-color: #202322;
-  
+  width: 100%;
+  padding: 15px 0;
 }
 
 header .header-divider {
-
+  width: 100%;
+  height: 1px;
+  padding: 10px 0 20px 0;
 }
 
 header nav {
@@ -124,12 +130,13 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 320px;
+  width: 100%;
   list-style: none;
 }
 
@@ -138,22 +145,77 @@ header nav ul li {
 
 }
 
+body {
+  flex-flow: row wrap;
+}
+
+footer .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .footer-content {
+
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+footer .social {
+
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+
 /*******Mobile styles - Homepage*********/
 
 /*****Main area*******/
 
-#main {
 
-}
 
-main #hero-area {
+#hero-area {
   display: flex;
   flex-flow: row wrap;
+  justify-content:center;
 }
 
-main .content-wrapper {
 
-}
 
 h1 {
 
@@ -178,6 +240,10 @@ aside .form {
  
 }
 
+aside p {
+  margin: 0;
+}
+
 aside h3 {
   flex-flow: row wrap;
 }
@@ -185,8 +251,16 @@ aside h3 {
 .features {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .content-wrapper {
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
+
 }
 
 .features .features-items {
@@ -196,12 +270,31 @@ aside h3 {
   flex-flow: row wrap;
 }
 
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features h2 {
+  bottom-margin: 60px;
+}
+
+
+.features p {
+  margin: 0;
+}
 .fontawesome-icon {
  
 }
 
 .features-item-description {
-
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .reviews {
@@ -214,8 +307,13 @@ reviews .content-wrapper {
 
 }
 
-h3 {
+.reviews h2{
+  margin-bottom: 40px;
+}
 
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 article {
@@ -226,55 +324,9 @@ article .lacrue-bottling {
 
 }
 
-/************Footer Styles**********/
 
-footer .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-footer .footer-content {
 
-}
-
-footer .contact {
-
-}
-
-h4 {
-
-}
-
-footer .social {
-
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-footer .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer {
-  flex-direction: column;
-}
-
-}
 
 
 
@@ -284,6 +336,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 mission .content-wrapper {
@@ -301,13 +354,16 @@ h2 {
 #map {
 
 }
-
-#contact-section {
+.contact-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 
 }
 
-contact-session .content-wrapper {
+.contact-section .content-wrapper {
+  margin: 0;
 
 }
 
