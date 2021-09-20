@@ -333,14 +333,14 @@ article .lacrue-bottling {
 /************Mobile Styles - About page****************/
 
 .mission {
+
+}
+
+.mission .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-mission .content-wrapper {
-
 }
 
 .mission-content {
