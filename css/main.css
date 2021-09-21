@@ -520,12 +520,15 @@ header nav ul {
 
 /****Hero area****/
 
+h1 {
+  padding: 50px;
+}
 
 /****Aside*****/
 
 aside .content-wrapper {
   margin: 50px 0;
- 
+  display: flex;
 
 }
 
@@ -533,7 +536,7 @@ aside .content-wrapper .form,
 aside .content-wrapper .form-description {
   width: 50%;
   margin: 0;
-  display:flex;
+
   justify-content: center;
   flex-flow: row wrap;
 }
@@ -570,7 +573,14 @@ aside .content-wrapper .form-description {
 footer .content-wrapper {
   width: 100%;
   margin: 100px 0;
+
 }
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 footer .contact {
   margin-bottom: 0;
@@ -579,6 +589,10 @@ footer .contact {
 footer .copyright {
   width: 100%;
 }
+
+/***********ABOUT PAGE - TABLET********/
+
+
 
 
 
