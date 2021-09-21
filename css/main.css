@@ -91,7 +91,7 @@ textarea {
       width: 90%;
       margin: 50px 0;
       padding: 0 20px;
-   
+ 
    }
 
 
@@ -280,7 +280,7 @@ aside h3 {
 }
 
 .features h2 {
-  bottom-margin: 60px;
+  margin-bottom: 60px;
 }
 
 
@@ -295,6 +295,7 @@ aside h3 {
   display: flex;
   justify-content: center;
   margin: 0;
+ 
 }
 
 .reviews {
@@ -370,16 +371,29 @@ h2 {
 
 /*******************Mobile Styles - FAQ page*******************/
 
-#faq {
+
+.faq {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-faq .content-wrapper {
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
+.faq h2 {
+  margin-bottom: 40px;
+}
 
-
+.faq-content {
+  margin-bottom: 50px;
+}
 
 
 
@@ -471,15 +485,107 @@ faq .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet Styles Here*/
+
+.content-wrapper {
+
+  max-width: 640px;
+  margin: 100px 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+header {
+  justify-content: space-around;
+}
+
+header .content-wrapper {
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+header nav {
+  width: 100%;
+  display: block;
+  padding-right: 68px;
+}
+
+header nav ul {
+  justify-content: space-around;
+}
+
+.header-divider {
+  display: none;
+}
+
+/****Hero area****/
+
+
+/****Aside*****/
+
+aside .content-wrapper {
+  margin: 50px 0;
+ 
+
+}
+
+aside .content-wrapper .form,
+aside .content-wrapper .form-description {
+  width: 50%;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+/*******Features*******/
+
+.features article {
+  width: 50%;
+}
+
+.features .features-item-description {
+  width: 62%;
+}
+
+
+/******Reviews*******/
+
+.reviews article {
+  
+}
+
+.reviews h3 {
+  width: 65%;
+}
+
+.reviews article div {
+  width: 50%;
+
+}
+
+/*******Footer*****/
+
+footer .content-wrapper {
+  width: 100%;
+  margin: 100px 0;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer .copyright {
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop Styles Here*/
+
+}
 }
 
 /* ==========================================================================
