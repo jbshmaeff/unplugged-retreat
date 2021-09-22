@@ -109,6 +109,14 @@ footer {
  
 }
 
+figure {
+  width: 60%;
+}
+
+figure img {
+  width: 100%;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -536,16 +544,19 @@ aside .content-wrapper .form,
 aside .content-wrapper .form-description {
   width: 50%;
   margin: 0;
-
   justify-content: center;
   flex-flow: row wrap;
 }
 
+aside .content-wrapper .form-description {
+  margin-right: 110px;
+}
 
 /*******Features*******/
 
 .features article {
   width: 50%;
+  flex-basis: auto;
 }
 
 .features .features-item-description {
@@ -591,6 +602,49 @@ footer .copyright {
 }
 
 /***********ABOUT PAGE - TABLET********/
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.mission .content-wrapper h2 {
+  margin: 50px;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 77%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/**************FAQ - TABLET********************/
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+
+
 
 
 
