@@ -677,29 +677,27 @@ aside .content-wrapper .form {
 
 /***Features***/
 
-.features .content-wrapper {
-  display: flex;
-  justify-content: left;
-  width: 68%;
+
+.features h2 {
+  width: 90%;
 }
 
 .features article {
-  flex-basis: 30%;
+  flex-basis: 33%;
 }
 
-footer .footer-content {
-  width: 88%;
+/****Reviews****/
+
+.reviews article div {
+  width: 42%;
 }
 
 
 /*******ABOUT - DESKTOP*****************/
 
+
 .mission .content-wrapper h2 {
   width: 90%;
-}
-
-.mission-content p {
-  width: 40%;
 }
 
 .contact-section .content-wrapper {
@@ -712,11 +710,6 @@ footer .footer-content {
 .faq .content-wrapper {
   align-items: flex-start;
 }
-
-.faq-content {
-  flex-basis: 45%;
-}
-
 
 
 
