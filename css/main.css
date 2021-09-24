@@ -94,9 +94,10 @@ html {
 }
 
 body {
-  flex-flow: row wrap;
-  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul,
@@ -112,16 +113,19 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
+  font-weight: 500;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
 }
 
 p {
@@ -144,7 +148,7 @@ address {
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
-  padding: 0 20px;
+
 }
 
 
@@ -156,28 +160,26 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
  }
-
- header {
- 
+header {
+  padding: 15px 0;
 }
-
-
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #202322;
+  margin: 0;
   width: 100%;
-  padding: 15px 0;
+
 }
 
 header .header-divider {
   width: 100%;
   height: 1px;
-  padding: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header nav {
@@ -186,17 +188,19 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-
+  padding: 0;
 }
 
 header nav ul li {
-
+  text-transform: uppercase;
 
 }
 
@@ -217,14 +221,14 @@ footer {
 
 footer .contact {
   margin-bottom: 50px;
+  text-align: center;
+}
+footer p {
+  margin: 0;
 }
 
 footer h3 {
   text-align: center;
-}
-
-footer .social {
-
 }
 
 footer .social-icons {
@@ -247,13 +251,7 @@ footer .copyright {
   margin: 20px 0;
 }
 
-footer {
-  flex-direction: column;
-}
 
-footer p {
-  margin: 0;
-}
 
 
 /*******Mobile styles - Homepage*********/
@@ -266,31 +264,46 @@ footer p {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background-color: #202322;
 }
 
+/******Aside*******/
 
-
-h1 {
-
-}
 
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
-aside .content-wrapper {
-
-}
-
-aside .form-description {
-
-}
+/***********Form buttons**************/
 
 aside .form {
+  margin-top: 30px;
+}
  
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #9d9ea4;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 aside p {
@@ -301,10 +314,13 @@ aside h3 {
   flex-flow: row wrap;
 }
 
+/**************Features************/
+
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 .features .content-wrapper {
@@ -312,8 +328,6 @@ aside h3 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
-
 }
 
 .features .features-items {
@@ -339,6 +353,7 @@ aside h3 {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 .fontawesome-icon {
  
@@ -351,10 +366,14 @@ aside h3 {
  
 }
 
+
+/***********Reviews*********************/
+
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 reviews .content-wrapper {
@@ -363,6 +382,7 @@ reviews .content-wrapper {
 
 .reviews h2{
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -370,40 +390,16 @@ reviews .content-wrapper {
   margin: 20px 0;
 }
 
-article {
-
-}
-
-article .lacrue-bottling {
-
-}
-
-
-
-
-
-
-
 /************Mobile Styles - About page****************/
 
 .mission {
-
-}
-
-.mission .content-wrapper {
+  background-color: #527158;  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.mission-content {
-
-}
-
-h2 {
-
-}
 
 #map {
 
@@ -413,7 +409,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+  background-color: #2a423a;
 }
 
 .contact-section .content-wrapper {
@@ -430,6 +426,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -442,11 +439,16 @@ h2 {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
 }
+.faq h3 {
+  line-height: 1.333;
+}
+
 
 
 
