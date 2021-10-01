@@ -246,13 +246,23 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 18px;
+  font-family: "FontAwesome5BrandsRegular";
+  line-height: 1.2;
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
 
+footer .social-icons p i {
+  font-size: 1.125em;
 }
 
 footer .copyright {
@@ -729,7 +739,7 @@ footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 77%;
+  width: 100%;
 }
 
 footer p {
@@ -738,6 +748,11 @@ footer p {
 
 footer .contact {
   margin-bottom: 0;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
 }
 
 footer .copyright {
